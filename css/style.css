@@ -1,0 +1,249 @@
+body { 
+  padding: 0;
+  margin: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.container {
+  max-width: 70%;
+  margin: 10px auto;
+  opacity: 0.8;
+}
+
+.gears-d3-canvas svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+.title{
+	position: absolute;
+	top: 5%;
+	left: 2%;
+}
+.logoleft{
+	color: white;
+
+}
+.menu{
+	position: fixed;
+	bottom: 0%;
+	left: 0%;
+	list-style-type: none;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow:row nowrap;
+	-webkit-flex-flow:row nowrap;
+	width: 100%;
+	height: 5%;
+	margin: 0;
+	background-color: black;
+	opacity: 0.5;
+	padding-top: 0.75%;
+	padding-bottom: 0.25%;
+}
+.menuitem{
+	padding-right: 1%;	
+	border-right: 1px solid #f2ea11;
+	font-size: 1.2em;
+	font-family: Cambria, Georgia, serif;
+	border-radius: 2px;
+	color: #f2ea11;
+	width: 10%;
+	text-align: center;
+	margin-right: 0.3%;
+	margin-left: 0.3%;
+}
+
+.menuitem:hover{
+	border-bottom: 3px solid #f2ea11; 
+	cursor: pointer;
+}
+p{
+	position: absolute;
+	bottom: 22%;
+	left: 3%;
+	font-size: 0.9em;
+	font-family: Cambria, Georgia,serif;
+	color: #f2ea11;
+	opacity: 0.6;
+}
+#titlelogo{
+	position: absolute;
+	top: -6%;
+	right: 0.5%;
+	height: 160px;
+	width: 300px;
+}
+
+.style-0 path { fill: #f2ea11; }
+.style-1 path { fill: #6A4A3C; }
+.style-2 path { fill: #CC333F; }
+.style-3 path { fill: #EB6841; }
+.style-4 path { fill: #EDC951; }
+
+
+/* styling for the overlay*/
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../images/landingbg.jpg);
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(../images/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+.overlay-close:hover{
+	cursor: pointer;
+}
+#present h1{
+	color: white;
+	font-family: Cambria,Georgia,serif;
+}
+#present img{
+	display: inline-block;
+	height: 150px;
+	width: 180px;
+}
+#prespons h1{
+	color: white;
+	font-family: Cambria,Georgia,serif;
+}
+#prespons img{
+	display: inline-block;
+	height: 150px;
+	width: 180px;
+	margin-right: 6%;
+	margin-bottom: 3%;
+}
+/* Menu style 
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.overlay ul li a {
+	font-size: 54px;
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #e3fcb1;
+}
+*/
+/* Effects */
+.overlay-slidedown {
+	overflow-y: scroll;
+	overflow-x:hidden;
+	visibility: hidden;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.overlay-slidedown.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
+
+
+
+/* 
+	Styling for gallery page
+*/
+
+#gallery{
+	position: absolute;
+	top: 31%;
+	left: 13%;
+	background-color: white;
+	opacity: 0.6;
+	border-radius: 2px;
+	height: auto;
+	width: 72%;
+}
+
+.panel{
+	width: 100%;
+}
+
+#panel1{
+	padding-top: 3%;
+	padding-bottom: 2%;
+	border-bottom: 1px solid black;
+	opacity: 1;
+}
+
+#panel2{
+	border-top: 1px solid black;
+}
+#panel2 h2{
+	font-family: Cambria,Georgia,serif;
+}
+#imgs img{
+	display: inline-block;
+	float: left;
+	height: 180px;
+	width: 290px;
+	margin-left: 1.1%;
+	margin-bottom: 2%;
+}
