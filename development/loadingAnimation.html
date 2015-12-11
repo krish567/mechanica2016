@@ -10,17 +10,37 @@
 			position: absolute;
 			top: 34%;
 			left: 22%;
+			opacity: 0;
 			-webkit-animation: fade 6s 1 forwards;
 			-webkit-animation-timing-function: linear;
 			-webkit-animation-fill-mode:forwards;
+			-webkit-animation-delay: 3s;
 			-moz-animation: fade 6s 1 forwards;
 			-moz-animation-timing-function:linear;
 			-moz-animation-fill-mode:forwards;
+			-moz-animation-delay: 3s;
 			-o-animation: fade 6s 1 forwards;
 			-o-animation-timing-function:linear;
 			-o-animation-fill-mode:forwards;
+			-o-animation-delay: 3s;
 		}
 		.str{
+			opacity: 0;
+			stroke-dasharray:1000px;
+			-webkit-animation: ani 6s 1 forwards;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode:forwards;
+			-webkit-animation-delay: 6s;
+			-moz-animation: ani 6s 1 forwards;
+			-moz-animation-timing-function:linear;
+			-moz-animation-fill-mode:forwards;
+			-moz-animation-delay: 6s;
+			-o-animation: ani 6s 1 forwards;
+			-o-animation-timing-function:linear;
+			-o-animation-fill-mode:forwards;
+			-o-animation-delay: 6s;
+		}
+		.stro{
 			stroke-dasharray:1000px;
 			-webkit-animation: ani 6s 1 forwards;
 			-webkit-animation-timing-function: linear;
@@ -70,42 +90,51 @@
 		}
 		@-o-keyframes ani{
 			0%{
+				opacity: 1;
 				stroke-dashoffset:1000px;
 				fill-opacity:0;
 			}
 			50%{
+				opacity: 1;
 				stroke-dashoffset:0px;
 				fill-opacity:0;
 			}
 			100%{
+				opacity: 1;
 				stroke-dashoffset:0px;
 				fill-opacity:1;
 			}
 		}
 		@-moz-keyframes ani{
 			0%{
+				opacity: 1;
 				stroke-dashoffset:1000px;
 				fill-opacity:0;
 			}
 			50%{
+				opacity: 1;
 				stroke-dashoffset:0px;
 				fill-opacity:0;
 			}
 			100%{
+				opacity: 1;
 				stroke-dashoffset:0px;
 				fill-opacity:1;
 			}
 		}
 		@-webkit-keyframes ani{
 			0%{
+				opacity: 1;
 				stroke-dashoffset:1000px;
 				fill-opacity:0;
 			}
 			50%{
+				opacity: 1;
 				stroke-dashoffset:0px;
 				fill-opacity:0;
 			}
 			100%{
+				opacity: 1;
 				stroke-dashoffset:0px;
 				fill-opacity:1;
 			}
@@ -144,9 +173,13 @@
 
 	<div class="aForMeaHeading">
 		<svg class="mainSvg" preserveAspectRatio= "xMinYMin meet" viewBox="0 0 680 350">
-			<path class="str" d="M 304.75 75 l 40 -70 l 40 70 l -20 0 l -5 -10 l -30 0 l -5 10 z" fill-opacity="0" fill="black" stroke="black" stroke-width="2" filter="url(#f2)" />
-			<path class="str" d="M 344.75 35 l 5 10 l -10 0 z" fill-opacity="0" fill="#fff" stroke="black" stroke-width="2"/>
+			<path class="stro" d="M 304.75 75 l 40 -70 l 40 70 l -20 0 l -5 -10 l -30 0 l -5 10 z" fill-opacity="0" fill="url(#gradient)" stroke="url(#gradient)" stroke-width="2" filter="url(#f2)" />
+			<path class="stro" d="M 344.75 35 l 5 10 l -10 0 z" fill-opacity="0" fill="#fff" stroke="url(#gradient)" stroke-width="2"/>
 			<defs>
+				<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+					<stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+				</linearGradient>
     			<filter id="f2" x="0" y="0" width="200%" height="200%">
       				<feOffset result="offOut" in="SourceGraphic" dx="2" dy="2" />
       				<feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
@@ -158,9 +191,13 @@
 
 	<div class="meaHeading">
 		<svg class="mainSvg" preserveAspectRatio= "xMinYMin meet" viewBox="0 0 680 350">
-			<path class="str" d="M 5 75 L 5 5 L 45 45 L 85 5 l 0 70 l -20 0 l 0 -20 L 45 75 L 25 55 l 0 20 z" fill-opacity="0" fill="black" stroke="black" stroke-width="2" filter="url(#f2)"/>
-			<path class="str" d="M 95 5 l 60 0 l 0 20 l -40 0 l 0 5 l 40 0 l 0 20 l -40 0 l 0 5 l 40 0 l 0 20 l -60 0 z" fill-opacity="0" fill="black" stroke="black" stroke-width="2" filter="url(#f2)"/>
+			<path class="stro" d="M 5 75 L 5 5 L 45 45 L 85 5 l 0 70 l -20 0 l 0 -20 L 45 75 L 25 55 l 0 20 z" fill-opacity="0" fill="url(#gradient)" stroke="url(#gradient)" stroke-width="2" filter="url(#f2)"/>
+			<path class="stro" d="M 95 5 l 60 0 l 0 20 l -40 0 l 0 5 l 40 0 l 0 20 l -40 0 l 0 5 l 40 0 l 0 20 l -60 0 z" fill-opacity="0" fill="url(#gradient)" stroke="url(#gradient)" stroke-width="2" filter="url(#f2)"/>
 			<defs>
+				<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+					<stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+				</linearGradient>
     			<filter id="f2" x="0" y="0" width="200%" height="200%">
       				<feOffset result="offOut" in="SourceGraphic" dx="2" dy="2" />
       				<feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
@@ -172,18 +209,22 @@
 
 	<div class="mechanicaHeading">
 		<svg class="mainSvg" preserveAspectRatio= "xMinYMin meet" viewBox="0 0 680 350">
-			<path class="str" d="M 5 75 L 5 5 L 45 45 L 85 5 l 0 70 l -20 0 l 0 -20 L 45 75 L 25 55 l 0 20 z" fill-opacity="0" fill="black" stroke="black" stroke-width="2" filter="url(#f2)"/>
-			<path class="str" d="M 95 5 l 60 0 l 0 20 l -40 0 l 0 5 l 40 0 l 0 20 l -40 0 l 0 5 l 40 0 l 0 20 l -60 0 z" fill-opacity="0" fill="black" stroke="black" stroke-width="2" filter="url(#f2)"/>
-			<path class="str" d="M 224.75 15.25 A 35 35 0 1 0 224.75 64.75 L 210.61 50.61 A 15 15 0 1 1 210.61 29.39 z" fill-opacity="0" fill="black" stroke="black" stroke-width="2" filter="url(#f2)"/>
-			<path class="str" d="M 234.75 75 l 0 -70 l 20 0 l 0 25 l 20 0 l 0 -25 l 20 0 l 0 70 l -20 0 l 0 -25 l -20 0 l 0 25 z" fill-opacity="0" fill="black" stroke="black" stroke-width="2" filter="url(#f2)"/>
-			<path class="str" d="M 304.75 75 l 40 -70 l 40 70 l -20 0 l -5 -10 l -30 0 l -5 10 z" fill-opacity="0" fill="black" stroke="black" stroke-width="2" filter="url(#f2)" />
-			<path class="str" d="M 344.75 35 l 5 10 l -10 0 z" fill-opacity="0" fill="#fff" stroke="black" stroke-width="2"/>
-			<path class="str" d="M 394.75 75 l 0 -70 l 50 35 l 0 -35 l 20 0 l 0 80 l -50 -35 l 0 25 z" fill-opacity="0" fill="black" stroke="black" stroke-width="2" filter="url(#f2)"/>
-			<path class="str" d="M 474.75 75 l 0 -70 l 20 0 l 0 70 z" fill-opacity="0" fill="black" stroke="black" stroke-width="2" filter="url(#f2)"/>
-			<path class="str" d="M 564.5 15.25 A 35 35 0 1 0 564.5 64.75 L 550.36 50.61 A 15 15 0 1 1 550.36 29.31 z" fill-opacity="0" fill="black" stroke="black" stroke-width="2" filter="url(#f2)"/>
-			<path class="str" d="M 570.5 75 l 40 -70 l 40 70 l -20 0 l -5 -10 l -30 0 l -5 10 z" fill-opacity="0" fill="black" stroke="black" stroke-width="2" filter="url(#f2)"/>
-			<path class="str" d="M 610.5 35 l 5 10 l -10 0 z" fill-opacity="0" fill="#fff" stroke="black" stroke-width="2"/>
+			<path class="str" d="M 5 75 L 5 5 L 45 45 L 85 5 l 0 70 l -20 0 l 0 -20 L 45 75 L 25 55 l 0 20 z" fill-opacity="0" fill="url(#gradient)" stroke="url(#gradient)" stroke-width="2" filter="url(#f2)"/>
+			<path class="str" d="M 95 5 l 60 0 l 0 20 l -40 0 l 0 5 l 40 0 l 0 20 l -40 0 l 0 5 l 40 0 l 0 20 l -60 0 z" fill-opacity="0" fill="url(#gradient)" stroke="url(#gradient)" stroke-width="2" filter="url(#f2)"/>
+			<path class="str" d="M 224.75 15.25 A 35 35 0 1 0 224.75 64.75 L 210.61 50.61 A 15 15 0 1 1 210.61 29.39 z" fill-opacity="0" fill="url(#gradient)" stroke="url(#gradient)" stroke-width="2" filter="url(#f2)"/>
+			<path class="str" d="M 234.75 75 l 0 -70 l 20 0 l 0 25 l 20 0 l 0 -25 l 20 0 l 0 70 l -20 0 l 0 -25 l -20 0 l 0 25 z" fill-opacity="0" fill="url(#gradient)" stroke="url(#gradient)" stroke-width="2" filter="url(#f2)"/>
+			<path class="str" d="M 304.75 75 l 40 -70 l 40 70 l -20 0 l -5 -10 l -30 0 l -5 10 z" fill-opacity="0" fill="url(#gradient)" stroke="url(#gradient)" stroke-width="2" filter="url(#f2)" />
+			<path class="str" d="M 344.75 35 l 5 10 l -10 0 z" fill-opacity="0" fill="#fff" stroke="url(#gradient)" stroke-width="2"/>
+			<path class="str" d="M 394.75 75 l 0 -70 l 50 35 l 0 -35 l 20 0 l 0 80 l -50 -35 l 0 25 z" fill-opacity="0" fill="url(#gradient)" stroke="url(#gradient)" stroke-width="2" filter="url(#f2)"/>
+			<path class="str" d="M 474.75 75 l 0 -70 l 20 0 l 0 70 z" fill-opacity="0" fill="url(#gradient)" stroke="url(#gradient)" stroke-width="2" filter="url(#f2)"/>
+			<path class="str" d="M 564.5 15.25 A 35 35 0 1 0 564.5 64.75 L 550.36 50.61 A 15 15 0 1 1 550.36 29.31 z" fill-opacity="0" fill="url(#gradient)" stroke="url(#gradient)" stroke-width="2" filter="url(#f2)"/>
+			<path class="str" d="M 570.5 75 l 40 -70 l 40 70 l -20 0 l -5 -10 l -30 0 l -5 10 z" fill-opacity="0" fill="url(#gradient)" stroke="url(#gradient)" stroke-width="2" filter="url(#f2)"/>
+			<path class="str" d="M 610.5 35 l 5 10 l -10 0 z" fill-opacity="0" fill="#fff" stroke="url(#gradient)" stroke-width="2"/>
 			<defs>
+				<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="0%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+					<stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+				</linearGradient>
     			<filter id="f2" x="0" y="0" width="200%" height="200%">
       				<feOffset result="offOut" in="SourceGraphic" dx="2" dy="2" />
       				<feGaussianBlur result="blurOut" in="offOut" stdDeviation="3" />
