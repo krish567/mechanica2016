@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.clock {
+  background: url("http://fc07.deviantart.net/fs70/i/2011/231/8/2/clock_face_by_agf81-d4756ii.jpg") no-repeat center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+  margin: 20px auto;
+  width: 200px;
+}
+.clock .hours, .clock .minutes, .clock .seconds {
+  display: block;
+  position: absolute;
+}
+.clock .hours {
+  background: #000;
+  height: 25%;
+  left: 48.75%;
+  top: 26.75%;
+  transform-origin: 50% 90%;
+  width: 2%;
+  z-index: 3;
+}
+.clock .minutes {
+  background: #000;
+  height: 39%;
+  left: 48.75%;
+  top: 13.3%;
+  transform-origin: 50% 93.5%;
+  width: 2%;
+  z-index: 2;
+}
+.clock .seconds {
+  background: #FF0000;
+  height: 39%;
+  left: 49.25%;
+  top: 13.3%;
+  transform-origin: 50% 93.5%;
+  width: 1%;
+  z-index: 1;
+}
