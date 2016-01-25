@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Basic Usage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    
+    
+    <link rel='stylesheet prefetch' href='http://material.angularjs.org/latest/angular-material.css'>
+<link rel='stylesheet prefetch' href='http://material.angularjs.org/latest/docs.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div ng-controller="AppCtrl" layout="column" style="height:500px;" ng-cloak="" class="sidenavdemoBasicUsage" ng-app="MyApp">
+
+  <section layout="row" flex="">
+
+        <div>
+          <md-button ng-click="toggleRight()" ng-hide="isOpenRight()" class="md-primary">
+            Social Tab
+          </md-button>
+        </div>
+
+    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+
+      <md-toolbar class="md-theme-light">
+        <h1 class="md-toolbar-tools">Social Tab</h1>
+      </md-toolbar>
+      <md-content ng-controller="RightCtrl" layout-padding="">
+        <div layout = "row">
+          <p flex="33">
+            <img src="img/facebook.png" >
+          </p>
+          <p flex="33">
+            <img src="img/twitter.png" >
+          </p>
+          <p flex="33">
+            <img src="img/instagram.png" >
+          </p>
+        </div>
+        <md-button ng-click="" class="md-primary">
+          Contact Us
+        </md-button>
+        <div style="text-align:center">
+        <p flex="33">
+            <img src="img/account.png" >
+            <p>
+            K Krishna Chaitanya<br>
+            Mobile Number
+            </p>
+        </p>
+        <p flex="33">
+            <img src="img/account.png" >
+            <p>
+            Minu Ashwanth<br>
+            Mobile Number
+            </p>
+        </p>
+        <p flex="33" >
+            <img src="img/account.png" >
+            <p>
+            Maheshwarran K<br>
+            8939678766
+            </p>
+        </p>
+        </div>
+      </md-content>
+
+    </md-sidenav>
+
+  </section>
+
+</div>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js'></script>
+<script src='http://ngmaterial.assets.s3.amazonaws.com/svg-assets-cache.js'></script>
+<script src='http://material.angularjs.org/latest/angular-material.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
