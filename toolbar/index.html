@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Toolbar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    
+    
+    <link rel='stylesheet prefetch' href='http://material.angularjs.org/latest/angular-material.css'>
+<link rel='stylesheet prefetch' href='http://material.angularjs.org/latest/docs.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div ng-controller="AppCtrl" ng-cloak="" class="toolbardemoBasicUsage" ng-app="MyApp">
+
+  <md-content>
+
+    <md-toolbar id="toolbar">
+      <div class="md-toolbar-tools">
+        
+        <h2>
+          <span>Toolbar with Icon Buttons</span>
+        </h2>
+        <span flex=""></span>
+        <md-button class="md-icon-button" aria-label="Facebook" href = "https://www.facebook.com/mechanica.iitm/">
+          <md-tooltip>Facebook</md-tooltip>
+          <md-icon class = "rotate" id = "fb" md-svg-icon="facebook.svg"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="Twitter" href="https://twitter.com/mechanica_iitm">
+          <md-tooltip>Twitter</md-tooltip>
+          <md-icon class = "rotate" md-svg-icon="twitter.svg"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="Android">
+          <md-tooltip>Android</md-tooltip>
+          <md-icon class = "rotate" md-svg-icon="img/icons/android.svg"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+  </md-content>
+</div>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js'></script>
+<script src='http://ngmaterial.assets.s3.amazonaws.com/svg-assets-cache.js'></script>
+<script src='http://material.angularjs.org/latest/angular-material.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
