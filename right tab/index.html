@@ -28,48 +28,27 @@
           </md-button>
         </div>
 
-    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right" style="height:500px; width:100px">
 
       <md-toolbar class="md-theme-light">
-        <h1 class="md-toolbar-tools">Social Tab</h1>
       </md-toolbar>
       <md-content ng-controller="RightCtrl" layout-padding="">
-        <div layout = "row">
+        <div layout = "column" style="text-align:center">
           <p flex="33">
-            <img src="img/facebook.png" >
+          <a href = "https://www.facebook.com/mechanica.iitm/">
+            <img src="img/facebook.png" class = "rotate">
+          </a>
           </p>
           <p flex="33">
-            <img src="img/twitter.png" >
+          <a href = "https://twitter.com/mechanica_iitm">
+            <img src="img/twitter.png" class = "rotate">
+          </a>
           </p>
           <p flex="33">
-            <img src="img/instagram.png" >
+          <a href = "">
+            <img src="img/android.png" style="height:48px; width=48px;" class = "rotate">
+          </a>
           </p>
-        </div>
-        <md-button ng-click="" class="md-primary">
-          Contact Us
-        </md-button>
-        <div style="text-align:center">
-        <p flex="33">
-            <img src="img/account.png" >
-            <p>
-            K Krishna Chaitanya<br>
-            Mobile Number
-            </p>
-        </p>
-        <p flex="33">
-            <img src="img/account.png" >
-            <p>
-            Minu Ashwanth<br>
-            Mobile Number
-            </p>
-        </p>
-        <p flex="33" >
-            <img src="img/account.png" >
-            <p>
-            Maheshwarran K<br>
-            8939678766
-            </p>
-        </p>
         </div>
       </md-content>
 
